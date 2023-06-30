@@ -2,12 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 function Contact() {
   return (
-    <Section>
+    <Section id="contact">
     <Container>
     <Content>
       <ContactTitle>
       <p>contact</p>
-      <h3>Fell Free to Contact</h3>
+      <h3>Feel Free to Contact</h3>
       </ContactTitle>
       <ContactIcon>
         <ContactIconBox>

@@ -88,7 +88,7 @@ import styled from 'styled-components';
 
 function About() {
   return (
-    <Container>
+    <Container id='about'>
       <Description>
         <Image></Image>
         <Textfield>

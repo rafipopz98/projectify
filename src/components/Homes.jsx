@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Home() {
+function Homes() {
     return (
-        <Container>
+        <Container id="home">
             <Description>
                 <Textfield>
                     <h1>
@@ -20,7 +20,7 @@ function Home() {
     )
 }
 
-export default Home
+export default Homes
 
 const Container = styled.div`
 margin:0 18%;
@@ -34,6 +34,7 @@ align-items:center;
 @media(max-width:768px){
     flex-direction:column;
     padding-top:70px;
+    height:100vh;
 }
 `
 const Textfield = styled.div`

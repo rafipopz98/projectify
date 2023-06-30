@@ -140,7 +140,7 @@ import styled from 'styled-components';
 
 function Uwu() {
   return (
-    <Container>
+    <Container id='projects'>
       <Description>
         <Image />
         <Textfield>
@@ -204,6 +204,7 @@ const Image = styled.div`
   @media (max-width: 460px) {
     height: 350px;
     width: 310px;
+    
   }
 `;
 
