@@ -27,7 +27,7 @@ margin:0 18%;
 `
 
 const Description = styled.div`
-height:100vh;
+height:80vh;
 display:flex;
 justify-content:center;
 align-items:center;

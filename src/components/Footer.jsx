@@ -111,7 +111,7 @@ export default Footer;
 
 const Footers = styled.div`
   background-color: rgb(45, 46, 50);
-  padding: 50px;
+  padding: 20px;
 `;
 
 const Container = styled.div`
