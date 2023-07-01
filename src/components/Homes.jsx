@@ -2,13 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 
 function Homes() {
+  
     return (
         <Container id="home">
             <Description>
                 <Textfield>
-                    <h1>
-                        Projectify
-                    </h1>
+                <h1 data-value="PROJECTIFY">Projectify</h1>
                     <p>
                         Worried about Projects,Worry Not!Projectify will handle all your projects and get your projects with 2 clicks!!!
                     </p>
@@ -81,3 +80,4 @@ animation: moving 8s ease-in-out infinite;
 }
 }
 `
+

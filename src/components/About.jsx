@@ -87,12 +87,19 @@ import React from 'react';
 import styled from 'styled-components';
 
 function About() {
+
+
+  
   return (
     <Container id='about'>
       <Description>
         <Image></Image>
         <Textfield>
-          <First>About Projectify</First>
+          <First>
+          <h2>
+          About Projectify
+          </h2>
+          </First>
           <Second>
             Create your Projects <span>without hassles</span>
           </Second>
@@ -155,6 +162,7 @@ const Textfield = styled.div`
 `;
 
 const First = styled.div`
+text-align:center;
   color: rgb(20, 126, 251);
   font-size: 17px;
   font-weight: 700;
