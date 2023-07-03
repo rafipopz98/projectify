@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-// import Header from "./components/Header";
+import Header from "./components/Header";
 import Homes from "./components/Homes";
 import About from "./components/About";
 import ProjectSample1 from "./components/ProjectSample1";
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-      {/* <Header /> */}
+      <Header />
       <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<Home />} />
