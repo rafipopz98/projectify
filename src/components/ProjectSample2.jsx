@@ -3,22 +3,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Uwu() {
+function Uwu(props) {
   return (
     <Container>
       <Description>
         <Textfield>
-          <First>Lorem ipsum dolor sit</First>
+        <First>{props.name}</First>
           <Second>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, numquam mollitia? Incidunt officia ex enim
-            dolore voluptates. Alias impedit illo minus dolorum quae?
+          {props.desc}
           </Second>
           <Lol>
             <a href="/">Code</a>
             <a href="/">Blog</a>
           </Lol>
         </Textfield>
-        <Image />
+        <Image bgimage={props.backimg}/>
       </Description>
     </Container>
   );
@@ -27,8 +26,11 @@ function Uwu() {
 export default Uwu;
 
 const Container = styled.div`
+margin-top:0;
+padding-top:0;
+${'' /* position:absolute; */}
 border-bottom:2px solid white;
-padding:2rem;
+padding-bottom:2rem;
   margin: 0 18%;
 
   @media (max-width: 768px) {
@@ -53,7 +55,7 @@ const Description = styled.div`
 const Image = styled.div`
   height: 350px;
   width: 410px;
-  background-image: url('/images/tesla-clone.png');
+  background-image:${props => `url("${props.bgimage}")`};
   object-fit: cover;
   object-position: top center;
   background-size: cover;

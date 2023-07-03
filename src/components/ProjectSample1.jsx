@@ -138,16 +138,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Uwu() {
+function Uwu(props) {
   return (
     <Container id='projects'>
       <Description>
-        <Image />
+        <Image bgimage={props.backimg}/>
         <Textfield>
-          <First>Lorem ipsum dolor sit</First>
+          <First>{props.name}</First>
           <Second>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, numquam mollitia? Incidunt officia ex enim
-            dolore voluptates. Alias impedit illo minus dolorum quae?
+            {props.desc}
           </Second>
           <Lol>
             <a href="/">Code</a>
@@ -189,7 +188,9 @@ const Description = styled.div`
 const Image = styled.div`
   height: 350px;
   width: 410px;
-  background-image: url('/images/tesla-clone.png');
+  ${'' /* background-image: url('/images/tesla-clone.png'); */}
+  ${'' /* background-image: url(); */}
+  background-image:${props => `url("${props.bgimage}")`};
   object-fit: cover;
   object-position: top center;
   background-size: cover;

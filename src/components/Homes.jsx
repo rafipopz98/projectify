@@ -25,8 +25,12 @@ const Container = styled.div`
 margin:0 18%;
 `
 
+
 const Description = styled.div`
-height:80vh;
+${'' /* height:0vh; */}
+position:relative;
+z-index:1;
+top:10rem;
 display:flex;
 justify-content:center;
 align-items:center;

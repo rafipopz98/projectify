@@ -32,6 +32,7 @@ export default Header;
 
 const Navbar = styled.nav`
   position: fixed;
+  z-index:20;
   height: 80px;
   background: rgb(0, 0, 0);
   box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 10px 0px;
