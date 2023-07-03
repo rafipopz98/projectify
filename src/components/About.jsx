@@ -13,14 +13,14 @@ function About() {
         <Textfield>
           <First>
           <h2>
-          About Projectify
+          About Projezard
           </h2>
           </First>
           <Second>
             Create your Projects <span>without hassles</span>
           </Second>
           <p>
-            Projectify helps you to create projects within 2 clicks!!<br />
+            Projezard helps you to create projects within 2 clicks!!<br />
             Step-1: Choose Any Project (scroll down to explore more projects) <br />
             Step-2: Copy the code on your favorite compiler (ex: VS Studio, Atom, etc...) <br />
             Voila!!! You have your own Project

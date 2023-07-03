@@ -11,7 +11,7 @@ function Header() {
   return (
     <Navbar>
       <Navleft>
-        Projectify
+        Projezard
       </Navleft>
       <BurgerMenu onClick={toggleMenu} open={open}>
         <div />
