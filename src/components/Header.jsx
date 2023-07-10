@@ -11,30 +11,14 @@ function Header() {
   const onLeave = ({ currentTarget }) => {
     gsap.to(currentTarget, { color: "rgb(227, 230, 243)", scale: 1 });
   };
-  const navright = useRef();
-  const navbar = useRef();
-  useLayoutEffect(() => {
-    gsap.from(navright.current, {
-      // opacity: 0,
-      // y:20,
-      // duration:1
-    });
-    // gsap.to(navright.current, {
-    //   opacity: 1,
-    gsap.from(navbar.current,{
-      opacity:0.9,
-      y:20,
-      duration:1
-    // });
-  }, []);
-  })
+  
 
   const toggleMenu = () => {
     setopen(!open);
   };
 
   return (
-    <Navbar ref={navbar} className="Navbar">
+    <Navbar  className="Navbar">
       <Navleft
         onMouseEnter={onEnter}
         onMouseLeave={onLeave}
@@ -47,7 +31,7 @@ function Header() {
         <div />
         <div />
       </BurgerMenu>
-      <Navright ref={navright} className="navright" open={open}>
+      <Navright  className="navright" open={open}>
         <li className="links">
           <a className="atag" href="#home">
             Home
